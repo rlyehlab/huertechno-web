@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> {{ titulo }}  </title>
+        <script type="text/javascript" src="{{url_for('static', filename='js/Chart.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+        <script type="text/javascript" src="{{url_for('static', filename='js/utils.js')}}"></script>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/jumbotron.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/canvas.css')}}">
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    
+    
+    </head>
+    <body>
+
+        <div>   
+        
+        {% block content %}
+        {% endblock %}
+        </div>
+    </body>
+<html>
