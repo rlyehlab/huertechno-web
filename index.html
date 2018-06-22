@@ -40,6 +40,15 @@
             });
     </script>
 
+    <script charset="utf-8">
+        $(function(){
+            $("#btnEndoTaller").click(function(){
+                $('html, body').animate({
+                    scrollTop: $('#endoTaller').offset().top
+                    }, 500);
+                });
+            });
+    </script>
 
 
 
@@ -60,7 +69,7 @@
                     <a href="https://0xacab.org/tecnohuerta/HuerTechno" class="btn">Code</a>
                     <a href="https://0xacab.org/tecnohuerta/HuerTechno/wikis/home" class="btn">Wiki</a>
                     <a id="btnContact"  class="btn" >Contacto</a>
-                    <a href="https://0xacab.org/hueretechno/endo-talleres"  class="btn" >EndoTaller</a>
+                    <a id="btnEndoTaller" href="https://0xacab.org/hueretechno/endo-talleres"  class="btn" >EndoTaller</a>
                 </div>
                    </div>
             </div>    
@@ -85,8 +94,8 @@
                     </div>
                 </div>
             </div>  
-            
             <div class="section section-light landing-section">
+            <!--div class="section section-dark  text-center"-->
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 column">
@@ -108,12 +117,41 @@
         </div>     
     </div>
 
-            <div class="section section-dark  text-center "   style="
+        <div class="main" >  
+            <div class="section section-dark landing-sectioni"
+            style="
             background-image: url('assets/paper_img/cat3.png');
             background-repeat: no-repeat;
             background-size: 100%;
             background-position: left bottom; 
-            "> 
+            "
+            >
+                <div id="endoTaller" class="container text-center  ">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-2">
+                            <h2> EndoTalleres</h2>
+                            <h5>EndoTaller es un ciclo de tallere y aprendizaje 
+                                sobre como armar un kit de HuerTechno, crear 
+                                nuevas funcionalidades, levantar y cerrar issues</h5>
+                            <br />
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+
+
+
+
+
+            <div class="section section-light  text-center"
+             style="
+            background-image: url('assets/paper_img/cat4.png');
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: left bottom; 
+            "
+            > 
                 <div class="container ">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
